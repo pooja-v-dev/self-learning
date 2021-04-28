@@ -1,0 +1,42 @@
+.error {
+    color: red;
+}
+
+#formSubmit {
+    padding: 10%;
+}
+
+#secBtn {
+    float: right;
+    margin: 3%;
+}
+
+#priBtn {
+    float: left;
+    margin: 3%;
+}
+
+#header_data {
+    height: 150px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    background: seagreen;
+    color: white;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
