@@ -21,28 +21,28 @@
     <form method="post" action="submitForm.php" id="formSubmit">
         <label for="title">Title :</label><br>
         <input type="text" name="title" id="title" value="<?php echo isset($title)? $title: ''; ?>"/>
-        <span class="error"><?php echo $titleErr; ?></span>
+        <span class="error"><?php echo isset($titleErr)?$titleErr:''; ?></span>
         <br><br>
 
 
         <label for="category">Category :</label><br>
         <input type="text" name="category" id="category" value="<?php echo isset($category)? $category: ''; ?>"/>
-        <span class="error"><?php echo $categoryErr; ?></span>
+        <span class="error"><?php echo isset($categoryErr)?$categoryErr:''; ?></span>
         <br><br>
 
         <label for="initiator">Initiator :</label><br>
         <input type="text" name="initiator" id="initiator"  value="<?php echo isset($initiator)? $initiator: ''; ?>"/>
-        <span class="error"><?php echo $initiatorErr; ?></span>
+        <span class="error"><?php echo isset($initiatorErr)?$initiatorErr:''; ?></span>
         <br><br>
 
         <label for="initiatoremail">Initiator Email :</label><br>
         <input type="text" name="initiatoremail" id="initiatoremail" value="<?php echo isset($initiatoremail)? $initiatoremail: ''; ?>"/>
-        <span class="error"><?php echo $initiatoremailErr; ?></span>
+        <span class="error"><?php echo isset($initiatoremailErr)?$initiatoremailErr:''; ?></span>
         <br><br>
 
         <label for="assignee">Assignee :</label><br>
         <input type="text" name="assignee" id="assignee" value="<?php echo isset($assignee)? $assignee: ''; ?>"/>
-        <span class="error"><?php echo $assigneeErr; ?></span>
+        <span class="error"><?php echo isset($assigneeErr)?$assigneeErr:''; ?></span>
         <br><br>
 
         <label for="priority">Priority :</label><br>
@@ -51,7 +51,7 @@
             <option value="NORMAL">NORMAL</option>
             <option value="LOW">LOW</option>
         </select>
-        <span class="error"><?php echo $priorityErr; ?></span>
+        <span class="error"><?php echo isset($priorityErr)?$priorityErr:''; ?></span>
         <br><br>
 
         <label for="requeststatus">Request Status :</label><br>
@@ -60,12 +60,12 @@
             <option value="ASSIGNED">ASSIGNED</option>
             <option value="CLOSED">CLOSED</option>
         </select>
-        <span class="error"><?php echo $requeststatusErr; ?></span>
+        <span class="error"><?php echo isset($requeststatusErr)?$requeststatusErr:''; ?></span>
         <br><br>
 
         <label for="closed">Closed Date</label><br>
         <input type="text" name="closed" id="closed" value="<?php echo isset($closed)? $closed: ''; ?>"/>
-        <span class="error"><?php echo $closedErr; ?></span>
+        <span class="error"><?php echo isset($closedErr)?$closedErr:''; ?></span>
         <br><br>
 
         <input type="submit" value="Submit">
